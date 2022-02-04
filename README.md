@@ -348,24 +348,24 @@ Choose one of these methods
 ##### 1. Create Service Accounts in existed Project (Recommended Method)
 - List your projects ids
 ```
-python3 gen_sa_accounts.py --list-projects
+python gen_sa_accounts.py --list-projects
 ```
 - Enable services automatically by this command
 ```
-python3 gen_sa_accounts.py --enable-services $PROJECTID
+python gen_sa_accounts.py --enable-services $PROJECTID
 ```
 - Create Sevice Accounts to current project
 ```
-python3 gen_sa_accounts.py --create-sas $PROJECTID
+python gen_sa_accounts.py --create-sas $PROJECTID
 ```
 - Download Sevice Accounts as accounts folder
 ```
-python3 gen_sa_accounts.py --download-keys $PROJECTID
+python gen_sa_accounts.py --download-keys $PROJECTID
 ```
 
 ##### 2. Create Service Accounts in New Project
 ```
-python3 gen_sa_accounts.py --quick-setup 1 --new-only
+python gen_sa_accounts.py --quick-setup 1 --new-only
 ```
 A folder named accounts will be created which will contain keys for the Service Accounts.
 
@@ -397,7 +397,7 @@ Then add emails from emails.txt to Google Group, after that add this Google Grou
 ##### 2. Add Them To Team Drive Directly
 - Run:
 ```
-python3 add_to_team_drive.py -d SharedTeamDriveSrcID
+python add_to_team_drive.py -d SharedTeamDriveSrcID
 ```
 ------
 
