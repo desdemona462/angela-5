@@ -26,7 +26,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 LOGGER = logging.getLogger(__name__)
 
-load_dotenv('config.env', override=True)
+load_dotenv('config6.env', override=True)
 
 def getConfig(name: str):
     return environ[name]
